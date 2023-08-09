@@ -361,17 +361,9 @@
   ;; cd $XDG_CONFIG_HOME/clojure && clojure -T:search/outdated
   :search/outdated
   {:replace-paths ["."]
-   :replace-deps  {com.github.liquidz/antq {:mvn/version "2.5.1095"}
+   :replace-deps  {com.github.liquidz/antq {:mvn/version "RELEASE"}
                    org.slf4j/slf4j-nop     {:mvn/version "2.0.7"}}
-   :exec-fn antq.tool/outdated
-   :exec-args {:directory ["."] ; default
-               :exclude ["org.clojure/tools.deps.alpha"]
-               ;; :focus ["com.github.liquidz/antq"]
-               :skip ["boot" "leiningen"]
-               :reporter "table" ; json edn format
-               :verbose false
-               :upgrade false
-               :force   false}}
+   :main-opts ["-m" "antq.core"]}
 
   ;; Carve - search through code for unused vars and remove them
   ;; clojure -M:search/unused-vars --opts '{:paths ["src" "test"]}'

@@ -44,8 +44,8 @@
  ;; Maven Central and Clojars are the canonical repositories for library dependencies
  ;; JCenter is large and fast mirror often accessible behind corporate firewalls
 
- :mvn/repos {"central" {:url "https://repo1.maven.org/maven2/"}
-             "clojars" {:url "https://repo.clojars.org/"}
+ :mvn/repos {"central" {:url "https://maven.aliyun.com/repository/central"}
+             "clojars" {:url "https://mirrors.tuna.tsinghua.edu.cn/clojars/"}
 
              ;; Clojure snapshots
              ;; "sonatype" {:url "https://oss.sonatype.org/content/repositories/snapshots/"}
@@ -54,7 +54,7 @@
              ;; Americas
              ;; "google-maven-central" {:url "https://maven-central.storage-download.googleapis.com/maven2/"}
              ;; Asia
-             ;; "google-maven-central" {:url "https://maven-central-asia.storage-download.googleapis.com/maven2/"}
+             "google-maven-central" {:url "https://maven-central-asia.storage-download.googleapis.com/maven2/"}
              ;; Europe
              ;; "google-maven-central" {:url "https://maven-central-eu.storage-download.googleapis.com/maven2/"}
 

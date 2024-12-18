@@ -47,8 +47,8 @@
  :mvn/repos {"central" {:url "https://repo1.maven.org/maven2/"}
              "clojars" {:url "https://repo.clojars.org/"}
              ;; 中国源
-             ;; "central" {:url "https://maven.aliyun.com/repository/central"}
-             ;; "clojars" {:url "https://mirrors.tuna.tsinghua.edu.cn/clojars/"}
+             "ali" {:url "https://maven.aliyun.com/repository/central"}
+             "qinghua" {:url "https://mirrors.tuna.tsinghua.edu.cn/clojars/"}
 
              ;; Clojure snapshots
              ;; "sonatype" {:url "https://oss.sonatype.org/content/repositories/snapshots/"}

@@ -412,21 +412,6 @@
    :replace-deps  {slipset/deps-deploy {:mvn/version "0.2.1"}}
    :main-opts     ["--main" "deps-deploy.deps-deploy" "deploy" :true]}
 
-  ;; End of Project Deployment
-  ;; ---------------------------------------------------
-
-  ;; ---------------------------------------------------
-  ;; Java Sources
-
-  ;; Look up Java Class and method definitions, eg. `cider-find-var` in Emacs
-  ;; Requires: Java sources installed locally e.g. sudo apt install openjdk-17-source
-  ;; Examples are from Ubuntu package install locations
-
-  ;; clojure -M:lib/java17-source
-  :src/java17
-  {:extra-deps
-   {openjdk/java-sources {:local/root "/usr/lib/jvm/openjdk-17/lib/src.zip"}}}
-
   ;; Clojure core Java source code in src/jvm/clojure/lang/
   :src/clojure
   {:extra-paths ["src/jvm"]

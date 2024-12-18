@@ -75,7 +75,17 @@
  ;; User alias definitions
 
  :aliases
- {;; ---------------------------------------------------
+ {;; Fulcro
+  :fulcro-dev    {:override-deps {com.fulcrologic/fulcro {:local/root "/home/chen/code/github/fulcrologic/fulcro"
+                                                      :exclusions [com.taoensso/sente]}}}
+  :statecharts-dev    {:override-deps {com.fulcrologic/statecharts {:local/root "/home/chen/code/github/fulcrologic/statecharts"}}}
+  :rad-dev   {:override-deps {com.fulcrologic/fulcro-rad                 {:local/root "/home/chen/code/github/fulcrologic/fulcro-rad"}
+
+                              com.fulcrologic/fulcro-rad-sql             {:local/root "/home/chen/code/github/fulcrologic/fulcro-rad-sql"}
+                              com.fulcrologic/fulcro-rad-semantic-ui     {:local/root "/home/chen/code/github/fulcrologic/fulcro-rad-semantic-ui"}
+                              com.fulcrologic/fulcro-rad-datomic         {:local/root "/home/chen/code/github/fulcrologic/fulcro-rad-datomic"
+                                                                          :exclusions [com.datomic/datomic-free]}}}
+  ;; ---------------------------------------------------
   ;; Development environment
 
   ;; Custom REPL startup
